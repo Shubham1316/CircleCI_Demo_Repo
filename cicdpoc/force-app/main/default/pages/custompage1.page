@@ -1,0 +1,21 @@
+<apex:page sidebar="true" showHeader="true" Controller="MyEmployee">
+<apex:form >
+<apex:pageBlock title="My Employee">
+
+<apex:pageblockSection columns="1" title="My Employee Information">
+
+<apex:inputfield value="{!MyEmployee.Name}" html-placeholder="First Name"/>
+
+<apex:inputfield value="{!MyEmployee.Last_Name__c}"   html-placeholder="Last Name" style="color:blue;"/>
+<apex:inputfield value="{!MyEmployee.Address__c}" html-placeholder="Address"/>
+<apex:inputfield value="{!MyEmployee.Phone__c}" html-placeholder="Phone"/>
+
+
+</apex:pageblockSection>
+<apex:pageblockButtons >
+<apex:commandButton action="{!doSave}" value="Save"/>
+
+</apex:pageblockButtons>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

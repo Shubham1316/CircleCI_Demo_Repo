@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+  <aura:attribute name="displayText" type="string" default="text"></aura:attribute>
+	<div>
+        <p>
+            Hello , welcome all. 
+            {!v.displayText}
+        </p>
+    </div>
+</aura:component>

@@ -1,0 +1,15 @@
+<apex:page sidebar="true" showHeader="true" standardController="contact" recordSetVar="cont"> 
+<apex:form >
+<apex:pageBlock title="New Merchandise">
+<apex:pageblockTable value="{!cont}" var="cnt">
+<apex:column value="{!cnt.name}"/>
+</apex:pageblockTable>
+<apex:pageblockButtons >
+<apex:commandButton value="First" action="{!first}"/>
+<apex:commandButton value="Previous" action="{!previous}"/>
+<apex:commandButton value="Next" action="{!next}"/>
+<apex:commandButton value="Last" action="{!last}"/>
+</apex:pageblockButtons>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

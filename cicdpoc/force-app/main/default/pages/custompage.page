@@ -1,0 +1,14 @@
+<apex:page sidebar="true" showHeader="true" Controller="MyAccount">
+<apex:form >
+<apex:pageBlock title="My Account">
+
+<apex:pageblockSection columns="1" title="My Account Information">
+<apex:inputfield value="{!MyAccount.name}"/>
+
+</apex:pageblockSection>
+<apex:pageblockButtons >
+<apex:commandButton action="{!doSave}" value="Save"/>
+</apex:pageblockButtons>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

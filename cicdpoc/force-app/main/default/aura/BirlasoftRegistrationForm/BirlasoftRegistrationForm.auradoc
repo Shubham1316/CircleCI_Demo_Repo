@@ -1,0 +1,6 @@
+<aura:documentation>
+    <aura:description><b>This Component is used to insert Birlasoft Employee Information</b></aura:description>
+	<aura:example name="BslRegistrationform" ref="c:BirlasoftRegistrationForm" label="Birlasoft Employee Registration Form">
+		Example Description
+	</aura:example>
+</aura:documentation>

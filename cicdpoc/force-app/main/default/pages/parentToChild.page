@@ -1,0 +1,12 @@
+<apex:page standardController="account">
+ <apex:form >
+ 
+ <apex:pageBlock title="Contacts for account {!account.name}">
+  <apex:pageBlockTable value="{!account.opportunities}" var="ac">
+  <apex:column value="{!ac.name}"/>
+
+ </apex:pageBlockTable>
+ </apex:pageBlock>
+
+ </apex:form>
+</apex:page>

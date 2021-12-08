@@ -1,0 +1,17 @@
+<apex:page sidebar="true" showHeader="true" standardController="Employee__c">
+<apex:form >
+<apex:pageBlock title="New Employee">
+<apex:pageblockSection columns="1" title="Employee Information">
+<apex:inputField value="{!Employee__c.Name}"/>
+<apex:inputField value="{!Employee__c.Last_Name__c}"/>
+<apex:inputField value="{!Employee__c.Address__c}" label="Address"/>
+
+<apex:inputField value="{!Employee__c.Phone__c}"/>
+</apex:pageblockSection>
+<apex:pageblockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Cancel" action="{!cancel}"/>
+</apex:pageblockButtons>
+</apex:pageBlock>
+</apex:form>
+</apex:page>
